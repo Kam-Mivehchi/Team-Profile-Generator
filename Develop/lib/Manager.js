@@ -1,13 +1,13 @@
 const Employee = require("./Employee");
 
 class Manager extends Employee {
-    constructor(role){
-        super('Manager',id,email);
-        this.role =role;
+    constructor(name,id,email, officeNumber){
+        super(name,'Manager',id,email);
+        this.officeNumber =officeNumber;
     }
     getOfficeNumber(){
-        console.log(`${this.role}`);
-        return `${this.role}`;
+        console.log(`${this.officeNumber}`);
+        return this.officeNumber;
     }
 
     getRole(){
