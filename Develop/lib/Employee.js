@@ -21,6 +21,7 @@ class Employee {
         console.log("Employee");
         return 'Employee';
     }
+    
    
 }
 
