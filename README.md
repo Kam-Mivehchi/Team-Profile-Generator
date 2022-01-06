@@ -174,6 +174,7 @@ You are required to submit the following for review:
 * A sample HTML file generated using your application.
 
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
+## Links
+	-Repo:https://github.com/Kam-Mivehchi/Team-Profile-Generator/
+## Walkthrough
 
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
