@@ -2,14 +2,14 @@ const createCards = members =>{
 
     const engineerCard = (engineer)=>{
         return `
-        <div>
-        <h5 class= 'card-title'>${engineer.name}</h5>
+        <div class="card" style = "width:18rem; border-radius: 15px";>
+        <h5 class= 'card-title '>${engineer.name}</h5>
         <h6 class='card-subtitle'>Engineer<i class='fas fa-user-tie'></i>
         <ul class ='card-text'>
         <li>ID: ${engineer.id}</li>
         <li>Office Number: ${engineer.officeNumber}</li>
-        <li class - 'text-white'><a href ='mailto:${engineer.email}?submit= Feedback&body = Message'>
-        <i class = 'fas fa-paper-plane'></i>Email
+        <li class = 'text-white'><a href ='mailto:${engineer.email}?submit= Feedback&body = Message'>
+        <i class = 'fas fa-paper-plane'></i>${engineer.email}
         </a></li>
         </ul>
         </div>
@@ -18,14 +18,14 @@ const createCards = members =>{
     }
     const internCard= (intern)=>{
         return `
-        <div>
+        <div class="card" style = "width:18rem; border-radius: 15px;">
         <h5 class= 'card-title'>${intern.name}</h5>
         <h6 class='card-subtitle'>Intern<i class='fas fa-user-tie'></i>
         <ul class ='card-text'>
         <li>ID: ${intern.id}</li>
         <li>Office Number: ${intern.officeNumber}</li>
-        <li class - 'text-white'><a href ='mailto:${intern.email}?submit= Feedback&body = Message'>
-        <i class = 'fas fa-paper-plane'></i>Email
+        <li class = 'text-white'><a href ='mailto:${intern.email}?submit= Feedback&body = Message'>
+        <i class = 'fas fa-paper-plane'></i>${intern.email}
         </a></li>
         </ul>
         </div>
@@ -37,14 +37,14 @@ const createCards = members =>{
 
     const managerCard = (manager)=>{
         return `
-        <div>
+        <div class="card" style = "width:18rem; border-radius: 15px;">
         <h5 class= 'card-title'>${manager.name}</h5>
         <h6 class='card-subtitle'>Manager<i class='fas fa-user-tie'></i>
         <ul class ='card-text'>
         <li>ID: ${manager.id}</li>
         <li>Office Number: ${manager.officeNumber}</li>
-        <li class - 'text-white'><a href ='mailto:${manager.email}?submit= Feedback&body = Message'>
-        <i class = 'fas fa-paper-plane'></i>Email
+        <li class = 'text-white'><a href ='mailto:${manager.email}?submit= Feedback&body = Message'>
+        <i class = 'fas fa-paper-plane'></i>${manager.email}
         </a></li>
         </ul>
         </div>
