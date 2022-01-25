@@ -21,8 +21,9 @@ Input validation for all inquirer prompts.
 - add multiple team functitonality
 
 ## Links:
+Walkthrough Video
+https://drive.google.com/file/d/1HvCn2XK-ryrTWiU1iQRmv-b7MUhhPIOf/view?usp=sharing
 Sample HTML
 ![image](https://user-images.githubusercontent.com/90432404/150909066-e185a685-ef11-44a8-96cb-af56c131a1e2.png)
 
-Walkthrough Video
-https://drive.google.com/file/d/1HvCn2XK-ryrTWiU1iQRmv-b7MUhhPIOf/view?usp=sharing
+
