@@ -22,5 +22,7 @@ Input validation for all inquirer prompts.
 
 ## Links:
 Sample HTML
+![image](https://user-images.githubusercontent.com/90432404/150909066-e185a685-ef11-44a8-96cb-af56c131a1e2.png)
 
 Walkthrough Video
+C:\Users\Kamyar\Desktop\Recording #7.mp4
