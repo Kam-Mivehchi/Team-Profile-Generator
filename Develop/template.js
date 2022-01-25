@@ -25,7 +25,7 @@ const createCards = members => {
         <h6 class='card-subtitle'>Intern<i class='fas fa-user-tie'></i>
         <ul class ='card-text'>
         <li>ID: ${intern.id}</li>
-        <i class="fas fa-graduation-cap"></i><li>${intern.school}</li>
+        <li><i class="fas fa-graduation-cap"></i>${intern.school}</li>
         <li class = 'text-white'><a href ='mailto:${intern.email}?submit= Feedback&body = Message'>
         <i class = 'fas fa-paper-plane'></i>${intern.email}
         </a></li>
