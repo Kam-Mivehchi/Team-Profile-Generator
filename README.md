@@ -1,6 +1,6 @@
 # Team Profile Generator
 
-##Introduction
+## Introduction
 CLI team profile generator using Inquirer to gather user input. Designed to allow team leaders to quickly launch team websites.
 Allows user to add 3 different types of employees: Managers, Engineers, Interns. Creates HTML dynamically with user entered data.
 
