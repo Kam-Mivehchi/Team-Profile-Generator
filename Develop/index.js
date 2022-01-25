@@ -82,10 +82,10 @@ function start() {
                     name: "ManagerName",
                     type: 'input',
                     message: 'Enter Manager name',
-                    validate:(answer)=>{
-                        if(answer!==""){
+                    validate: (answer) => {
+                        if (answer !== "") {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter at Least one Character'
                         }
                     }
@@ -94,11 +94,11 @@ function start() {
                     name: "ManagerId",
                     type: 'input',
                     message: 'Enter Manager Id',
-                    validate:(answer)=>{
+                    validate: (answer) => {
                         const pass = answer.match(/^[1-9]\d*$/);
-                        if(pass){
+                        if (pass) {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter a valid id (1-9)'
                         }
                     }
@@ -110,26 +110,26 @@ function start() {
                     validate: (answer) => {
                         const pass = answer.match(/\S+@\S+\.\S+/);
                         if (pass) {
-                          return true;
+                            return true;
                         }
                         return 'Please enter a valid email address.';
-                      },
-            
+                    },
+
                 },
                 {
                     name: "github",
                     type: 'input',
                     message: 'Enter Manager office number',
-                    validate:(answer)=>{
+                    validate: (answer) => {
                         const pass = answer.match(/^[1-9]\d*$/);
-                        if(pass){
+                        if (pass) {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter a valid office number (1-9)'
                         }
                     }
-            
-            
+
+
                 }
 
             ])
@@ -153,10 +153,10 @@ function start() {
                     name: "EngineerName",
                     type: 'input',
                     message: 'Enter Engineer name',
-                    validate:(answer)=>{
-                        if(answer!==""){
+                    validate: (answer) => {
+                        if (answer !== "") {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter at Least one Character'
                         }
                     }
@@ -165,11 +165,11 @@ function start() {
                     name: "EngineerId",
                     type: 'input',
                     message: 'Enter Engineer Id',
-                    validate:(answer)=>{
+                    validate: (answer) => {
                         const pass = answer.match(/^[1-9]\d*$/);
-                        if(pass){
+                        if (pass) {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter a valid id (1-9)'
                         }
                     }
@@ -179,17 +179,24 @@ function start() {
                     type: 'input',
                     message: "Enter Engineer's Email",
                     validate: (answer) => {
-                        const pass = answer.match(/\S+@\S+\.\S+/);
+                        const pass = answer.match(/\S+@\S+\.\S/);
                         if (pass) {
-                          return true;
+                            return true;
                         }
                         return 'Please enter a valid email address.';
-                      },
+                    },
                 },
                 {
                     name: "github",
                     type: 'input',
-                    message: "Enter Engineer's Github Link"
+                    message: "Enter Engineer's Github username",
+                    validate: (answer) => {
+                        if (answer !== "") {
+                            return true;
+                        } else {
+                            return 'Please Enter a Valid Github username'
+                        }
+                    }
                 }
 
             ])
@@ -212,10 +219,10 @@ function start() {
                     name: "InternName",
                     type: 'input',
                     message: 'Enter Intern name',
-                    validate:(answer)=>{
-                        if(answer!==""){
+                    validate: (answer) => {
+                        if (answer !== "") {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter at Least one Character'
                         }
                     }
@@ -224,11 +231,11 @@ function start() {
                     name: "InternId",
                     type: 'input',
                     message: 'Enter Intern Id',
-                    validate:(answer)=>{
+                    validate: (answer) => {
                         const pass = answer.match(/^[1-9]\d*$/);
-                        if(pass){
+                        if (pass) {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter a valid id (1-9)'
                         }
                     }
@@ -240,19 +247,19 @@ function start() {
                     validate: (answer) => {
                         const pass = answer.match(/\S+@\S+\.\S+/);
                         if (pass) {
-                          return true;
+                            return true;
                         }
                         return 'Please enter a valid email address.';
-                      },
+                    },
                 },
                 {
                     name: "school",
                     type: 'input',
                     message: "Enter Intern's School name",
-                    validate:(answer)=>{
-                        if(answer!==""){
+                    validate: (answer) => {
+                        if (answer !== "") {
                             return true;
-                        }else{
+                        } else {
                             return 'Please Enter at Least one Character'
                         }
                     }
