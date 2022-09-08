@@ -3,7 +3,7 @@ const Engineer = require('../lib/Engineer')
 
 describe("Engineer", () => {
 
-   let testEngineer = new Engineer("Tommy", 21, "test@test.com", 103)
+   let testEngineer = new Engineer("Tommy", 21, "test@test.com", "custom_username")
    let expected = { name: "Tommy", employee_id: 21, email: "test@test.com", github: "custom_username" }
    test("Engineer inherits getRole, getId, getEmail from Employee", () => {
 

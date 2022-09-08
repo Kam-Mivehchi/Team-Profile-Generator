@@ -3,7 +3,7 @@ const Intern = require('../lib/Intern')
 
 describe("Intern", () => {
 
-   let testIntern = new Intern("Tommy", 21, "test@test.com", 103)
+   let testIntern = new Intern("Tommy", 21, "test@test.com", "Harvard")
    let expected = { name: "Tommy", employee_id: 21, email: "test@test.com", school: "Harvard" }
    test("Intern inherits getRole, getId, getEmail from Employee", () => {
 
