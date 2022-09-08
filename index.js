@@ -78,7 +78,7 @@ const internPrompt = [
    },
    {
       type: 'input',
-      name: 'github',
+      name: 'school',
       message: "Enter the Intern's School:"
    },
 ]
