@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Kam-Mivehchi/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "fs": "^0.0.1-security",
+    "inquirer": "^6.3.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "jest": "^29.0.2"

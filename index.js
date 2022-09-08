@@ -1,9 +1,10 @@
+const fs = require('fs');
+const path = require('path')
 const inquirer = require('inquirer');
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
-
-
+const GenerateHTML = require('./GenerateHTML')
 let team = []
 
 const managerPrompt = [
@@ -110,7 +111,8 @@ function displayMenu() {
          default:
 
             //Generate the HTMl end the app
-            return "Goodbye"
+
+            return createTeamPage(team)
       }
 
    }
@@ -118,6 +120,15 @@ function displayMenu() {
 
 
 }
+
+function createTeamPage(team) {
+   const directory = path.resolve(__dirname, 'dist');
+   if (!fs.existsSync(directory)) {
+      fs.mkdirSync(directory)
+   }
+   fs.writeFileSync(path.join(directory, 'team.html'), GenerateHTML(team), "utf-8")
+}
+
 function init() {
    inquirer.prompt(managerPrompt)
       .then((answers) => {
