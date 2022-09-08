@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kam-Mivehchi/Team-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kam-Mivehchi/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Kam-Mivehchi/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.2"
+  }
+}
