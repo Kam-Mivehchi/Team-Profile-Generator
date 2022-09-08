@@ -1,10 +1,10 @@
 
 const Manager = require('../lib/Manager')
 
-Describe("Manager", () => {
+describe("Manager", () => {
 
-   let testManager = new Manager("tim", 21, "test@test.com", 103)
-   let expected = { name: "Tommy", employee_id: 21, email: "test@test.com", office_number: 103 }
+   let testManager = new Manager("Tommy", 21, "test@test.com", 103)
+   let expected = { name: "Tommy", employee_id: 21, email: "test@test.com", officeNumber: 103 }
    test("Manager inherits getRole, getId, getEmail from Employee", () => {
 
       expect(testManager.getRole()).not.toEqual(null)
@@ -20,7 +20,7 @@ Describe("Manager", () => {
 
    })
    test("Manager.getOfficeNumber() returns the office number", () => {
-      expect(testManager.getOfficeNumber()).toEqual(expected.office_number)
+      expect(testManager.getOfficeNumber()).toEqual(expected.officeNumber)
 
    })
 

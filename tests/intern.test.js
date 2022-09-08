@@ -1,9 +1,9 @@
 
 const Intern = require('../lib/Intern')
 
-Describe("Intern", () => {
+describe("Intern", () => {
 
-   let testIntern = new Intern("tim", 21, "test@test.com", 103)
+   let testIntern = new Intern("Tommy", 21, "test@test.com", 103)
    let expected = { name: "Tommy", employee_id: 21, email: "test@test.com", school: "Harvard" }
    test("Intern inherits getRole, getId, getEmail from Employee", () => {
 
