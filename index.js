@@ -1,5 +1,10 @@
 const inquirer = require('inquirer');
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
 
+
+let team = []
 
 const managerPrompt = [
    {
@@ -19,7 +24,7 @@ const managerPrompt = [
    },
    {
       type: 'input',
-      name: 'office number',
+      name: 'officeNumber',
       message: "Enter the Manager's office number"
    },
 
@@ -58,55 +63,69 @@ const internPrompt = [
    {
       type: 'input',
       name: "name",
-      message: "Enter the Engineers's Name"
+      message: "Enter the Intern's Name"
    },
    {
       type: 'input',
       name: 'id',
-      message: "Enter the Engineers's employee ID"
+      message: "Enter the Intern's employee ID"
    },
    {
       type: 'input',
       name: 'email',
-      message: "Enter the Engineers's employee email address"
+      message: "Enter the Intern's employee email address"
    },
    {
       type: 'input',
       name: 'github',
-      message: "Enter the Engineers's Github username(**USERNAME ONLY** Do not include 'https://www.github.com/'):"
+      message: "Enter the Intern's School:"
    },
 ]
 
 
 
 //function to initialize inquirer
+function displayMenu() {
+   inquirer.prompt(menu).then((answers) => {
+      switch (answers.options) {
+         case "Add an Engineer":
+            inquirer.prompt(engineerPrompt).then((answers) => {
+               let { name, id, email, github } = answers
+               const engineer = new Engineer(name, id, email, github)
+               team.push(engineer)
+               displayMenu()
+
+            });
+            break;
+         case "Add an Intern":
+
+            inquirer.prompt(internPrompt).then((answers) => {
+               let { name, id, email, school } = answers
+               const intern = new Intern(name, id, email, school)
+               team.push(intern)
+               displayMenu()
+
+            });
+            break;
+         default:
+
+            //Generate the HTMl end the app
+            return "Goodbye"
+      }
+
+   }
+   )
 
 
+}
 function init() {
    inquirer.prompt(managerPrompt)
       .then((answers) => {
-
-         inquirer.prompt(menu).then((answers) => {
-            switch (answers.options) {
-               case "Add an Engineer":
-                  inquirer.prompt(engineerPrompt).then((answers) => {
-
-                  });
-                  break;
-               case "Add an Intern":
-
-                  inquirer.prompt(internPrompt).then((answers) => {
-
-                  });
-                  break;
-               default:
-
-                  //Generate the HTMl end the app
-                  return "Goodbye"
-            }
-         })
-      }
-      )
+         let { name, id, email, officeNumber } = answers
+         const manager = new Manager(name, id, email, officeNumber)
+         team.push(manager)
+         displayMenu()
+      })
 }
 
 init()
